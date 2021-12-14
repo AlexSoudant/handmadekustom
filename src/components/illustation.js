@@ -10,25 +10,34 @@ const IllustrationContainer = styled.div`
 
 const Image = styled.div`
   background-image: url(${image});
-  min-height: 50em;  width: auto;
+  width: auto;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  ${tw`    
+    lg:min-height[50em]
+    min-height[20em]
+    object-fit[fill]
+    md:bg-fixed
+    bg-scroll
+  `};
   `
 
 const IllustrationText = styled.div`
   ${tw`
     position[absolute]
-    left[30%]
+    lg:left[30%]
+    left[10%]
     top[20%]
     `};
 
     h1 {
         ${tw`
-        text-5xl
+        lg:text-5xl
+        text-xl
         font-bold
         text-gray-100
         m-5
@@ -37,7 +46,8 @@ const IllustrationText = styled.div`
 
     h2 {
         ${tw`
-        text-2xl
+        lg:text-2xl
+        text-lg
         font-bold
         text-gray-100
         m-5

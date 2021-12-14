@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/handmadekustom",
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
     title: "Kustom Made",

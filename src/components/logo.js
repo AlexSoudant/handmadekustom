@@ -8,13 +8,15 @@ const LogoContainer = styled.div`
   ${tw`
     flex
     items-center
+    margin-left[1em]
   `};
 `;
 
 const LogoText = styled.div`
   ${tw`
-    text-xl
-    md:text-2xl
+    lg:text-xl
+    md:text-lg
+    text-sm
     font-bold
     text-gray-100
     m-5

@@ -16,6 +16,7 @@ const CreationsContainer = styled.span`{
   const Image = styled.div`
   background-image: url(${image});
   min-height: 70em;  width: auto;
+  position: relative;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -26,10 +27,9 @@ const CreationsContainer = styled.span`{
   `
 
   const Title = styled.div`
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: 180%;
-  
+
   div {
     text-align: center;
     background-color:#111;
@@ -59,14 +59,14 @@ const CreationsContainer = styled.span`{
 const Gallery = styled.div`
 position: absolute;
 width: 100%;
-top: 190%;
+top: 0%;
 `;
   
 export function Creations() {
     return (
       <CreationsContainer>
-          <Image/>
           <Title> <div><h1>Mes Réalisations</h1> <Dot/></div></Title>
+          <Image>
           <Gallery className="text-gray-600 body-font">
             <div className="container px-5 py-24 mx-auto">
 
@@ -134,6 +134,7 @@ export function Creations() {
                 </div>
             </div>
             </Gallery>
+          </Image>
       </CreationsContainer>
     );
   }

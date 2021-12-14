@@ -10,7 +10,16 @@ flex justify-center m-5
 
     div {
         ${tw`  
-            block p-6 rounded-lg shadow-lg bg-white max-w-sm height[12em] width[20em]
+            block 
+            p-6 
+            rounded-lg 
+            shadow-lg 
+            bg-white 
+            max-w-sm 
+            lg:height[12em] 
+            lg:width[20em]
+            height[10em] 
+            width[10em]
         `};
 
         h5 {

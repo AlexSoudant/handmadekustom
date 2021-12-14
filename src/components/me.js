@@ -50,7 +50,8 @@ ${tw`
 const ContentContainer = styled.div`
 ${tw`  
     flex
-    flex-row
+    flex-col
+    md:flex-row
     m-5
     justify-center
     align-items[center]
@@ -64,13 +65,17 @@ ${tw`
     m-16
     justify-center
     align-items[center]
-    width[23em]
-    font-size[x-large]
+    max-width[23em]
+    lg:font-size[x-large]
+    font-size[small]
     text-align[justify]
 `};`;
 
 const Image = styled.div`
-    width:50em;
+    ${tw`
+        lg:width[50em]
+        width[20em]
+    `};
     img {
         ${tw`  
         shadow-2xl rounded max-w-full h-auto align-middle border-none

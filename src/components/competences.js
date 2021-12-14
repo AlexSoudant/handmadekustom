@@ -40,7 +40,7 @@ ${tw`
         flex-wrap
         justify-center
         align-middle
-        width[70em]
+        max-width[70em]
 `};
   }` 
 
