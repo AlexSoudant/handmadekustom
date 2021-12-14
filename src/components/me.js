@@ -73,7 +73,9 @@ ${tw`
 
 const Image = styled.div`
     ${tw`
-        lg:width[50em]
+        lg:width[45em]
+        lg:margin-right[3em]
+        md:width[30em]
         width[20em]
     `};
     img {

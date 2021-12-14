@@ -14,8 +14,13 @@ const CreationsContainer = styled.span`{
   }` 
 
   const Image = styled.div`
+  ${tw`  
+    lg:min-height[70em]
+    min-height[80em]
+    overflow-hidden
+  `};
   background-image: url(${image});
-  min-height: 70em;  width: auto;
+  width: auto;
   position: relative;
 
   /* Create the parallax scrolling effect */

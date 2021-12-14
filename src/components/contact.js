@@ -30,7 +30,8 @@ const Information = styled.h1`
     ${tw`  
         flex-auto
         flex-col
-        font-size[x-large]
+        lg:font-size[x-large]
+        font-size[large]
         text-align[center]
         font-style[oblique]
         padding-bottom[2em]

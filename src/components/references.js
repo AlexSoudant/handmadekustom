@@ -8,6 +8,7 @@ const ReferencesContainer = styled.div`{
         flex-col
         justify-center
         align-middle
+        font-size[small]
     `};
 
     div {
