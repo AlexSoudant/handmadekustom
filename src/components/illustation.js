@@ -18,7 +18,7 @@ const Image = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   ${tw`    
-    lg:min-height[50em]
+    md:min-height[50em]
     min-height[20em]
     object-fit[fill]
     md:bg-fixed
@@ -31,7 +31,9 @@ const IllustrationText = styled.div`
     position[absolute]
     lg:left[30%]
     left[10%]
-    top[20%]
+    top[10%]
+    md:top[20%]
+    sm:top[10%]
     `};
 
     h1 {
@@ -58,11 +60,11 @@ const IllustrationText = styled.div`
 export function Illustration() {
     return (
       <IllustrationContainer>
-    <Image/>
-    <IllustrationText>
-            <h1>Atelier de Chaudronnerie</h1>
-            <h2>Donnez forme à vos projets par l'accompagnement d'un professionnel.</h2>
-    </IllustrationText>
+        <Image/>
+        <IllustrationText>
+                <h1>Atelier de Chaudronnerie</h1>
+                <h2>Donnez forme à vos projets par l'accompagnement d'un professionnel.</h2>
+        </IllustrationText>
       </IllustrationContainer>
     );
   }

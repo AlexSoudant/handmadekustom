@@ -63,12 +63,15 @@ const NavItem = styled.div`
 `;
 
 export function Navbar() {
-  const isMobile = useMediaQuery({ maxWidth: SCREENS.sm });
+  const isMobile = useMediaQuery({ maxWidth: SCREENS.md });
   
   const buttonLabelsTable = ["Accueil", "Compétences", "Qui Suis-Je", "Réalisations", "Contact"];
 
   const scrollToSection = (index) => {
-    const sectionScrollPosition = [0, 800, 1500, 2200, 5000]
+    let sectionScrollPosition = [0, 800, 1500, 2200, 5000];
+    if (isMobile) {
+      sectionScrollPosition = [0, 350, 880, 1650, 3100];
+    }
     setTimeout(() => {
       window.scrollTo({ top: sectionScrollPosition[index], behavior: 'smooth' })
     }, 0)
@@ -84,8 +87,8 @@ export function Navbar() {
         <Menu right styles={menuStyles}>
           <ListContainer>
             {buttonLabelsTable.map((label, index) => {
-                return  <NavItem menu>
-                  <button onClick={() => scrollToSection(index)} key={index}>
+                return  <NavItem menu key={"navItem" + index}>
+                  <button onClick={() => scrollToSection(index)} >
                 {label}
               </button>
             </NavItem>
@@ -104,7 +107,7 @@ export function Navbar() {
           </LogoContainer>
       <MenuContainer>
         {buttonLabelsTable.map((label, index) => {
-          return  <button onClick={() => scrollToSection(index)} key={index}
+          return  <button onClick={() => scrollToSection(index)} key={"label" + index}
           className="
             #fff
             py-4

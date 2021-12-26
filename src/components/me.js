@@ -62,7 +62,7 @@ const DescriptionText = styled.div`
 ${tw`  
     flex
     flex-col
-    m-16
+    m-14
     justify-center
     align-items[center]
     max-width[23em]
@@ -74,7 +74,6 @@ ${tw`
 const Image = styled.div`
     ${tw`
         lg:width[45em]
-        lg:margin-right[3em]
         md:width[30em]
         width[20em]
     `};
