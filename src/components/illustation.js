@@ -19,6 +19,7 @@ const Image = styled.div`
   background-size: cover;
   ${tw`    
     lg:min-height[50em]
+    md:min-height[30em]
     min-height[20em]
     object-fit[fill]
     md:bg-fixed
@@ -31,7 +32,8 @@ const IllustrationText = styled.div`
     position[absolute]
     lg:left[30%]
     left[10%]
-    top[20%]
+    top[15%]
+    sm:top[20%]
     `};
 
     h1 {

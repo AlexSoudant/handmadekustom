@@ -16,8 +16,8 @@ const CreationsContainer = styled.span`{
   const Image = styled.div`
   ${tw`  
     lg:min-height[70em]
-    min-height[80em]
-    overflow-hidden
+    min-height[28em]
+    overflow-scroll
   `};
   background-image: url(${image});
   width: auto;
@@ -102,7 +102,7 @@ export function Creations() {
                     <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                         <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Lorem ipsum</h2>
                         <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Lorem ipsum dolor sit amet.</h1>
-                        <p className="leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p className="leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                     </div>
                 </div>

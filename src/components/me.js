@@ -52,7 +52,7 @@ ${tw`
     flex
     flex-col
     md:flex-row
-    m-5
+    sm:m-5
     justify-center
     align-items[center]
 `};`;

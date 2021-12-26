@@ -64,17 +64,25 @@ const NavItem = styled.div`
 
 export function Navbar() {
   const isMobile = useMediaQuery({ maxWidth: SCREENS.sm });
-  
+  const isTablet = useMediaQuery({ maxWidth: SCREENS.md });
+
   const buttonLabelsTable = ["Accueil", "Compétences", "Qui Suis-Je", "Réalisations", "Contact"];
 
   const scrollToSection = (index) => {
-    const sectionScrollPosition = [0, 800, 1500, 2200, 5000]
+    let sectionScrollPosition = [0, 800, 1500, 2200, 5000];
+    
+    if (isMobile) {
+      sectionScrollPosition = [0, 320, 650, 1450, 5000]
+    } else if (isTablet) {
+      sectionScrollPosition = [0, 500, 1100, 1625, 5000]
+    }
+
     setTimeout(() => {
       window.scrollTo({ top: sectionScrollPosition[index], behavior: 'smooth' })
     }, 0)
   };
 
-  if (isMobile) {
+  if (isTablet) {
     return (
       <NavbarContainer>
           <LogoContainer>

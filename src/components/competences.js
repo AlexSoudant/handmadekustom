@@ -11,9 +11,12 @@ ${tw`
     flex-col
     padding-top[2em]
     padding-bottom[5em]
-    justify-center
+    justify-start
     align-items[center]
     background-color[rgb(250,250,250)]
+    height[20em]
+    sm:height[auto]
+    overflow-scroll
 `};`;
 
 const CompetencesTitle = styled.h1`
@@ -24,7 +27,8 @@ ${tw`
     text-align[center]
     font-style[oblique]
     font-bold
-    padding-bottom[2em]
+    sm:padding-bottom[2em]
+    padding-bottom[1em]
 `};
 
     div {
