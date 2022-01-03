@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "MyFontPunch";
+    src: local('MyFont'), url("./fonts/dangerbot/dangerbotpunch.otf");
+    /* Add other formats as you see fit */
+    }
+    
+@font-face {
+    font-family: "MyFontEngrave";
+    src: local('MyFont'), url("./fonts/dangerbot/dangerbotengrave.otf");
+    /* Add other formats as you see fit */
+}
+    
+html, body {
+    font-family: 'MyFontPunch';
+}

@@ -12,7 +12,7 @@ import { References } from "../components/references";
 const pageStyles = {
   color: "#232129",
   padding: 0,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  fontFamily: "myFontPunch",
 }
 
 // markup

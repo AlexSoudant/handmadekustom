@@ -8,6 +8,11 @@ import { SCREENS } from "../responsive";
 import menuStyles from "../styles/menuStyles";
 
 const NavbarContainer = styled.div`
+  
+
+  font-family: 'MyFontEngrave';
+
+
   ${tw`
     position[sticky]
     top[0]
@@ -19,9 +24,7 @@ const NavbarContainer = styled.div`
     lg:pl-12
     lg:pr-12
     justify-between
-    bg-gradient-to-r from-blue-400 via-red-500 to-gray-900
-    text-gray-100
-    font-bold
+    bg-gradient-to-r from-[#FE27FF] via-[#270DF4] to-black
     font-size[larger]
     z-20
     md:min-height[1em]
