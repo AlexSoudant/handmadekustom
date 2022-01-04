@@ -43,9 +43,8 @@ export function Contact() {
       <ContactContainer>
           <Title>Contact <Dot /></Title>
           <Information>Romain Blanchard</Information>
-          <Information>handmadekustom@gmail.com</Information>
+          <Information>metalmaster.rb@gmail.com</Information>
           <Information>Tél : 06 xx xx xx xx</Information>
-          <Information>Adresse : 1 route de la Gaboricière, 85000 Vendée.</Information>
       </ContactContainer>
     );
   }

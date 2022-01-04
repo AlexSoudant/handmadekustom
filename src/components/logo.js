@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-import welderImg from '../images/welder.png';
+import metalLogo from '../images/metal_master_logo.png';
 
 
 const LogoContainer = styled.div`
@@ -15,10 +15,12 @@ const LogoContainer = styled.div`
 const LogoText = styled.div`
   ${tw`
     lg:text-xl
-    md:text-lg
+    md:text-xl
     text-sm
-    font-bold
-    text-gray-100
+    // font-bold
+    // text-gray-100
+    font-family["MyFontEngrave"]
+    text-white
     m-5
     `};
 `;
@@ -38,9 +40,9 @@ export function Logo() {
     return (
       <LogoContainer>
         <Image>
-          <img src={welderImg} alt="Kustom Made Logo"/>
+          <img src={metalLogo} alt="Metal Master Logo"/>
         </Image>
-        <LogoText>Handmade Kustom</LogoText>
+        <LogoText>Metal Master</LogoText>
       </LogoContainer>
     );
   }

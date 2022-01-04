@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-import image from '../images/welding-background.png';
+import metalLogo from '../images/metal_master_logo.png';
 
 const IllustrationContainer = styled.div`
   ${tw`
@@ -9,7 +9,7 @@ const IllustrationContainer = styled.div`
 `;
 
 const Image = styled.div`
-  background-image: url(${image});
+  background-image: url(${metalLogo});
   width: auto;
 
   /* Create the parallax scrolling effect */
@@ -19,7 +19,7 @@ const Image = styled.div`
   background-size: cover;
   ${tw`    
     lg:min-height[50em]
-    md:min-height[30em]
+    md:min-height[42em]
     min-height[20em]
     object-fit[fill]
     md:bg-fixed
@@ -27,44 +27,44 @@ const Image = styled.div`
   `};
   `
 
-const IllustrationText = styled.div`
-  ${tw`
-    position[absolute]
-    lg:left[30%]
-    left[10%]
-    top[15%]
-    sm:top[20%]
-    `};
+// const IllustrationText = styled.div`
+//   ${tw`
+//     position[absolute]
+//     lg:left[30%]
+//     left[10%]
+//     top[15%]
+//     sm:top[20%]
+//     `};
 
-    h1 {
-        ${tw`
-        lg:text-5xl
-        text-xl
-        font-bold
-        text-gray-100
-        m-5
-        `};
-    }
+//     h1 {
+//         ${tw`
+//         lg:text-5xl
+//         text-xl
+//         font-bold
+//         text-gray-100
+//         m-5
+//         `};
+//     }
 
-    h2 {
-        ${tw`
-        lg:text-2xl
-        text-lg
-        font-bold
-        text-gray-100
-        m-5
-        `};
-    }
-`;
+//     h2 {
+//         ${tw`
+//         lg:text-2xl
+//         text-lg
+//         font-bold
+//         text-gray-100
+//         m-5
+//         `};
+//     }
+// `;
 
 export function Illustration() {
     return (
       <IllustrationContainer>
     <Image/>
-    <IllustrationText>
+    {/* <IllustrationText>
             <h1>Atelier de Chaudronnerie</h1>
             <h2>Donnez forme à vos projets par l'accompagnement d'un professionnel.</h2>
-    </IllustrationText>
+    </IllustrationText> */}
       </IllustrationContainer>
     );
   }

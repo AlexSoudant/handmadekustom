@@ -46,7 +46,6 @@ const CreationsContainer = styled.span`{
         font-size[xx-large]
         text-align[center]
         font-style[oblique]
-        font-bold
     `};
 
     h1 {
