@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-import metalLogo from '../images/metal_master_logo.png';
+import metalLogo from '../images/metal_master_logo_alt.jpeg';
 
 
 const LogoContainer = styled.div`

@@ -28,7 +28,6 @@ const CreationsContainer = styled.span`{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.35;
   `
 
   const Title = styled.div`
@@ -67,6 +66,38 @@ top: 0%;
 `;
   
 export function Creations() {
+    const creationsTable = [
+        {tip: "Usinage", title :'Polissage acier', descr:'Lipsum', url:'../images/realisations/image0.jpeg'}, 
+        {tip: "Technique", title :'Découpe Acier', descr:'Lipsum', url:'../images/realisations/image1.jpeg'}, 
+        {tip: "Technique", title :'Soudure Acier', descr:'Lipsum', url:'../images/realisations/image2.jpeg'}, 
+        {tip: "Assemblage", title :'Assemblage', descr:'Lipsum', url:'../images/realisations/image3.jpeg'}, 
+        {tip: "Outillage", title :'Outil', descr:'Lipsum', url:'../images/realisations/image4.jpeg'}, 
+        {tip: "Assemblage", title :'Assemblage', descr:'Lipsum', url:'../images/realisations/image5.jpeg'}, 
+        {tip: "Technique", title :'Soudure Acier', descr:'Lipsum', url:'../images/realisations/image6.jpeg'}, 
+        {tip: "Technique", title :'Soudure Acier', descr:'Lipsum', url:'../images/realisations/image7.jpeg'}, 
+        {tip: "Assemblage", title :'Assemblage', descr:'Lipsum', url:'../images/realisations/image8.jpeg'}, 
+        {tip: "Outillage", title :'Outil', descr:'Lipsum', url:'../images/realisations/image9.jpeg'}, 
+        {tip: "Assemblage", title :'Assemblage', descr:'Lipsum', url:'../images/realisations/image10.jpeg'}, 
+        {tip: "Technique", title :'Soudure Acier', descr:'Lipsum', url:'../images/realisations/image11.jpeg'}, 
+        {tip: "Technique", title :'Soudure Acier', descr:'Lipsum', url:'../images/realisations/image12.jpeg'}, 
+        {tip: "Assemblage", title :'Assemblage', descr:'Lipsum', url:'../images/realisations/image13.jpeg'}, 
+        {tip: "Technique", title :'Soudure Acier', descr:'Lipsum', url:'../images/realisations/image14.jpeg'}, 
+        {tip: "Assemblage", title :'Assemblage', descr:'Lipsum', url:'../images/realisations/image15.jpeg'}, 
+        {tip: "Assemblage", title :'Assemblage ', descr:'Lipsum', url:'../images/realisations/image16.jpeg'}, 
+        {tip: "Technique", title :'Soudure Acier', descr:'Lipsum', url:'../images/realisations/image17.jpeg'}, 
+        {tip: "Assemblage", title :'Assemblage', descr:'Lipsum', url:'../images/realisations/image18.jpeg'}, 
+    ];
+
+    const cache = {};
+
+    function importAll(r) {
+        r.keys().forEach((key) => (cache[key] = r(key)));
+    }
+    // Note from the docs -> Warning: The arguments passed to require.context must be literals!
+    importAll(require.context("../images/realisations", false, /\.(png|jpe?g|svg)$/));
+
+    const images = Object.entries(cache).map(module => module[1].default);
+
     return (
       <CreationsContainer>
           <Title> <div><h1>Mes Réalisations</h1> <Dot/></div></Title>
@@ -75,66 +106,20 @@ export function Creations() {
             <div className="container px-5 py-24 mx-auto">
 
                 <div className="flex flex-wrap -m-4">
-                <div className="lg:w-1/3 sm:w-1/2 p-4">
-                    <div className="flex relative h-80">
-                    <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/600x360" />
-                    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                        <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Charpente en Acier</h2>
-                        <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Chantier à Saint-Herblain 2019.</h1>
-                        <p className="leading-relaxed">Photo prise pendant la mise en place de la charpente.</p>
-                    </div>
-                    </div>
-                </div>
-                <div className="lg:w-1/3 sm:w-1/2 p-4">
-                    <div className="flex relative h-80">
-                    <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/600x360"/>
-                    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                        <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Etagère Aviateur</h2>
-                        <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Création personnelle de 2018.</h1>
-                        <p className="leading-relaxed">Etagère entièrement inox en forme d'aile d'avion. Poids moyen : 10kg.</p>
-                    </div>
-                    </div>
-                </div>
-                <div className="lg:w-1/3 sm:w-1/2 p-4">
-                    <div className="flex relative h-80">
-                    <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/600x360"/>
-                    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                        <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Lorem ipsum</h2>
-                        <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Lorem ipsum dolor sit amet.</h1>
-                        <p className="leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    </div>
-                </div>
-                <div className="lg:w-1/3 sm:w-1/2 p-4">
-                    <div className="flex relative h-80">
-                    <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/600x360"/>
-                    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                        <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Lorem ipsum</h2>
-                        <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Lorem ipsum dolor sit amet.</h1>
-                        <p className="leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    </div>
-                </div>
-                <div className="lg:w-1/3 sm:w-1/2 p-4">
-                    <div className="flex relative h-80">
-                    <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/600x360"/>
-                    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                        <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Lorem ipsum</h2>
-                        <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Lorem ipsum dolor sit amet.</h1>
-                        <p className="leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    </div>
-                </div>
-                <div className="lg:w-1/3 sm:w-1/2 p-4">
-                    <div className="flex relative h-80">
-                    <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/600x360"/>
-                    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                        <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Lorem ipsum</h2>
-                        <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Lorem ipsum dolor sit amet.</h1>
-                        <p className="leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    </div>
-                </div>
+                {images.map((image, index) => {
+               return <div className="lg:w-1/3 sm:w-1/2 p-4" key={index}>
+               <div className="flex relative h-80">
+               <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={image} />
+               <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">{creationsTable[index].tip}</h2>
+                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">{creationsTable[index].title}</h1>
+                   <p className="leading-relaxed">{creationsTable[index].descr}</p>
+               </div>
+               </div>
+           </div>
+          })}
+
+    
                 </div>
             </div>
             </Gallery>

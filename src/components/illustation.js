@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-import metalLogo from '../images/metal_master_logo.png';
+import metalLogo from '../images/metal_master_logo_alt.jpeg';
 
 const IllustrationContainer = styled.div`
   ${tw`
@@ -14,10 +14,14 @@ const Image = styled.div`
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  background-position-x: center;
+  background-position-y: bottom;
+
   ${tw`    
+    md:background-position-y[top]
+    lg:background-position-y[bottom]
     lg:min-height[50em]
     md:min-height[42em]
     min-height[20em]

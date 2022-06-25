@@ -26,7 +26,7 @@ const Title = styled.h1`
     `};
 `
 
-const Information = styled.h1`
+const Information = styled.h2`
     ${tw`  
         flex-auto
         flex-col
@@ -44,7 +44,7 @@ export function Contact() {
           <Title>Contact <Dot /></Title>
           <Information>Romain Blanchard</Information>
           <Information>metalmaster.rb@gmail.com</Information>
-          <Information>Tél : 06 xx xx xx xx</Information>
+          <Information>Tél : 07 456 226 15</Information>
       </ContactContainer>
     );
   }
