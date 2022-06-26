@@ -52,7 +52,7 @@ ${tw`
 // https://www.randstad.fr/metiers/chaudronnier-fh/
 
 const competencesTable = [
-    {title :'Assemblage Matériaux', descr:'Lorem ipsum'}, 
+    {title :'Assemblage tige Acier Inox Alu', descr:'Lorem ipsum'}, 
     {title :'Analyse plans et schémas', descr:'Lorem ipsum'}, 
     {title :'Soudure Cuivre', descr:'Lorem ipsum'}, 
     {title :'Certifications', descr:'soudage arc (EN 111, EN 135, EN 141)'}, 
@@ -60,13 +60,23 @@ const competencesTable = [
     {title :'Usinage', descr:'Pièces Inox et plastique'}
 ];
 
+const cache = {};
+
+function importAll(r) {
+    r.keys().forEach((key) => (cache[key] = r(key)));
+}
+// Note from the docs -> Warning: The arguments passed to require.context must be literals!
+importAll(require.context("../images/competences", false, /\.(png|jpe?g|svg)$/));
+
+const images = Object.entries(cache).map(module => module[1].default);
+
 export function Competences() {
     return (
       <CompentencesContainer>
           <CompetencesTitle>Mes Compétences <Dot /></CompetencesTitle>
           <CardsContainer>
-          {competencesTable.map((competence, index) => {
-               return <Card title={competence.title} descr={competence.descr} key={index}></Card>
+          {images.map((image, index) => {
+               return <Card title={competencesTable[index].title} image={image} key={index}></Card>
           })}
           </CardsContainer>
       </CompentencesContainer>

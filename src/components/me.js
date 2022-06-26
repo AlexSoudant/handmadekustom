@@ -91,7 +91,11 @@ export function Me() {
       <MeContainer>
           <Title><h1>Qui Suis-Je </h1> <div> ?</div></Title>
           <ContentContainer>
-              <DescriptionText>Bonjour ! Je m'appelle Romain Blanchard. J'ai pour passion de transformer les matériaux bruts en créations originales. Mon métier de chaudronnier m'a amené à travailler avec de nombreux clients qui m'ont fait grandir professionnellement à travers des chantiers toujours plus ambitieux. J'ai aujourd'hui 20 ans d'expérience dans les domaines de la construction navale et des travaux maritimes. Désormais auto-entrepreneur, je souhaite accompagner vos projets pour tous travaux dans l'assemblage de matériaux.</DescriptionText>
+              <DescriptionText>Bonjour ! Je m’appelle Romain Blanchard. J'ai pour passion de transformer les matériaux bruts en créations originales répondant à vos besoins. 
+                Mon apprentissage ainsi que mon Tour de France chez les compagnons du devoir m’on forgé une philosophie et une qualité de travail qui me permettent aujourd’hui de vous proposer mes services. 
+                Mon métier de chaudronnier m'a amené à travailler avec de nombreux clients qui m'ont fait grandir professionnellement à travers des chantiers toujours plus ambitieux. 
+                J'ai aujourd'hui 20 ans d'expérience dans les domaines de la chaudronnerie générale, des travaux maritimes et industriels. 
+                Désormais auto-entrepreneur, je souhaite accompagner vos projets avec une étude et réalisation suivant un cahier des charges précis.</DescriptionText>
               <Image><img src={image} alt="me welding"/></Image>
           </ContentContainer>
       </MeContainer>
