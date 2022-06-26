@@ -16,7 +16,7 @@ ${tw`
     background-color[rgb(250,250,250)]
     height[20em]
     sm:height[auto]
-    overflow-scroll
+    overflow-x-hidden
 `};`;
 
 const CompetencesTitle = styled.h1`

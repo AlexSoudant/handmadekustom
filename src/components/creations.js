@@ -22,6 +22,7 @@ const CreationsContainer = styled.span`{
   background-image: url(${image});
   width: auto;
   position: relative;
+  overflow-x:hidden;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;

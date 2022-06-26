@@ -16,7 +16,8 @@ const FooterContainer = styled.div`
     lg:pl-12
     lg:pr-12
     justify-center
-    bg-gradient-to-r from-[#FE27FF] via-[#270DF4] to-black
+    // bg-gradient-to-r from-[#FE27FF] via-[#270DF4] to-black
+    background-color[black]
     text-gray-100
     font-bold
     font-size[larger]

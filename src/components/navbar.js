@@ -3,7 +3,6 @@ import { slide as Menu } from "react-burger-menu";
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
 import tw from "twin.macro";
-import { Logo } from '../components/logo';
 import { SCREENS } from "../responsive";
 import menuStyles from "../styles/menuStyles";
 
@@ -24,7 +23,8 @@ const NavbarContainer = styled.div`
     lg:pl-12
     lg:pr-12
     justify-between
-    bg-gradient-to-r from-[#FE27FF] via-[#270DF4] to-black
+    // bg-gradient-to-r from-[#FE27FF] via-[#270DF4] to-black
+    background-color[black]
     font-size[larger]
     z-20
     md:min-height[1em]
@@ -89,7 +89,7 @@ export function Navbar() {
     return (
       <NavbarContainer>
           <LogoContainer>
-              <Logo />
+              {/* <Logo /> */}
           </LogoContainer>
       <MenuContainer>
         <Menu right styles={menuStyles}>
@@ -111,7 +111,7 @@ export function Navbar() {
     return (
       <NavbarContainer>
           <LogoContainer>
-              <Logo />
+              {/* <Logo /> */}
           </LogoContainer>
       <MenuContainer>
         {buttonLabelsTable.map((label, index) => {
