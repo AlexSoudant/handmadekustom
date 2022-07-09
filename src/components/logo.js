@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-import metalLogo from '../images/metal_master_logo_alt.jpeg';
+import metalLogo from '../images/logo.jpeg';
 
 
 const LogoContainer = styled.div`
   ${tw`
     flex
     items-center
-    margin-left[1em]
+    width[75%]
   `};
 `;
 

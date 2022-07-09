@@ -5,6 +5,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import { SCREENS } from "../responsive";
 import menuStyles from "../styles/menuStyles";
+import { Logo } from "./logo";
 
 const NavbarContainer = styled.div`
   
@@ -85,11 +86,10 @@ export function Navbar() {
     }, 0)
   };
 
-  if (isTablet) {
     return (
       <NavbarContainer>
           <LogoContainer>
-              {/* <Logo /> */}
+              <Logo />
           </LogoContainer>
       <MenuContainer>
         <Menu right styles={menuStyles}>
@@ -107,32 +107,4 @@ export function Navbar() {
       </MenuContainer>
       </NavbarContainer>
     );
-  } else {
-    return (
-      <NavbarContainer>
-          <LogoContainer>
-              {/* <Logo /> */}
-          </LogoContainer>
-      <MenuContainer>
-        {buttonLabelsTable.map((label, index) => {
-          return  <button onClick={() => scrollToSection(index)} key={index}
-          className="
-            #fff
-            py-4
-            px-6
-            block
-            hover:text-purple-500
-            focus:outline-none
-            text-white
-            font-medium
-          "
-        >
-          {label}
-        </button>
-       })
-      }
-      </MenuContainer>
-      </NavbarContainer>
-    );
-  }
 }

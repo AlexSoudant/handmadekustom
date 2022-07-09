@@ -51,7 +51,7 @@ ${tw`
 // https://www.randstad.fr/metiers/chaudronnier-fh/
 
 const competencesTable = [
-    {title :'Assemblage tig Acier Inox Alu'}, 
+    {title :'Tig Acier Inox Alu'}, 
     {title :'Usinage'}, 
     {title :'Roulage'}
 ];
