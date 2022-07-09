@@ -70,10 +70,10 @@ export function Creations() {
     const creationsTable = [
         {tip: "Assemblage", title :'Fabrication', descr:'Jardinière en acier corten.'}, 
         {tip: "Technique", title :'Découpe', descr:'Plaque Acier'}, 
-        {tip: "Assemblage", title :'Soudure', descr:'Tige Acier Inox Alu.'}, 
-        {tip: "Assemblage", title :'Soudure', descr:'Tige Acier Inox Alu.'}, 
+        {tip: "Assemblage", title :'Soudure', descr:'Tig Acier Inox Alu.'}, 
+        {tip: "Assemblage", title :'Soudure', descr:'Tig Acier Inox Alu.'}, 
         {tip: "Assemblage", title :'Fabrication', descr:'Chariot de dévidage en acier galvanisé et aluminium.'}, 
-        {tip: "Assemblage", title :'Soudure', descr:'Tige Acier Inox Alu.'}, 
+        {tip: "Assemblage", title :'Soudure', descr:'Tig Acier Inox Alu.'}, 
         {tip: "Assemblage", title :'Fabrication', descr:'Plateforme d\'accès.'}, 
         {tip: "Assemblage", title :'Fabrication', descr:'Escalier d\'accès de 5m50 de hauteur pour une cuve à acide.'}, 
         {tip: "Technique", title :'Soudure', descr:'Lipsum'}, 
