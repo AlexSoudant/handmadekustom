@@ -44,7 +44,6 @@ ${tw`
         flex-wrap
         justify-center
         align-middle
-        max-width[70em]
 `};
   }` 
 
@@ -52,12 +51,9 @@ ${tw`
 // https://www.randstad.fr/metiers/chaudronnier-fh/
 
 const competencesTable = [
-    {title :'Assemblage tige Acier Inox Alu', descr:'Lorem ipsum'}, 
-    {title :'Analyse plans et schémas', descr:'Lorem ipsum'}, 
-    {title :'Soudure Cuivre', descr:'Lorem ipsum'}, 
-    {title :'Certifications', descr:'soudage arc (EN 111, EN 135, EN 141)'}, 
-    {title :'Sensibilisation sécurité VB', descr:'industrie, risques machines.'}, 
-    {title :'Usinage', descr:'Pièces Inox et plastique'}
+    {title :'Assemblage tig Acier Inox Alu'}, 
+    {title :'Usinage'}, 
+    {title :'Roulage'}
 ];
 
 const cache = {};

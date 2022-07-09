@@ -10,24 +10,23 @@ const IllustrationContainer = styled.div`
 
 const Image = styled.div`
   background-image: url(${metalLogo});
-  width: auto;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: center;
-  background-position-y: bottom;
-
-  ${tw`    
+  ${tw`  
+    background-position-y[top]  
     md:background-position-y[top]
-    lg:background-position-y[bottom]
-    lg:min-height[50em]
+    lg:background-size[65em]
+    xl:background-size[75em]
+    lg:min-height[65em]
+    background-color[black]
     md:min-height[42em]
-    min-height[20em]
+    min-height[18em]
     object-fit[fill]
     md:bg-fixed
-    bg-scroll
   `};
   `
 

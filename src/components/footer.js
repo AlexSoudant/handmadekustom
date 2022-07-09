@@ -35,7 +35,7 @@ export function Footer() {
     return (
       <FooterContainer>
         <button onClick={scrollToTopPage} onKeyUp={scrollToTopPage} tabIndex="0">
-          <FontAwesomeIcon icon={faChevronUp} size="3x" />
+          <FontAwesomeIcon icon={faChevronUp} size="3x" color="red" />
         </button>
       </FooterContainer>
     );
