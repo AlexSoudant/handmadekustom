@@ -28,11 +28,10 @@ const LogoText = styled.div`
 const Image = styled.div`
   width: auto;
   ${tw`h-16
-  flex-auto display[flex] flex-direction[row] justify-center align-middle`};
+  flex-auto display[flex] flex-direction[row] justify-center align-middle align-items[center]`};
 
   img {
     width: auto;
-    height: 100%;
   }
 `;
 
