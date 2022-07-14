@@ -68,13 +68,15 @@ const Gallery = styled.div`
 `;
   
 export function Creations() {
-    const creationsParams = [{title:"Particuliers", imagePath:"../images/realisations/particuliers"}, {title:"Industrie",imagePath:"../images/realisations/industrie"}, {title:"Travaux public",imagePath:"../images/realisations/travauxPublic"}]
+    const creationsParams = [{title:"Particuliers"}, {title:"Industrie"}, {title:"Travaux public"}]
     const creationsTable = [
       [
         {tip: "Assemblage", title :'Fabrication', descr:'Jardinière en acier corten.'}, 
         {tip: "Assemblage", title :'Fabrication', descr:'Portillon de jardin.'}, 
         {tip: "Technique", title :'Soudure', descr:'Lipsum'}, 
         {tip: "Assemblage", title :'Fabrication', descr:'Rambarde amovible.'}, 
+        {tip: "Assemblage", title :'Réalisation', descr:'Gabarit de positionnement de vitrage dans le ferroviaire.'},
+        {tip: "Assemblage", title :'Réalisation', descr:'Prototype pour l\'industrie ferroviaire.'},  
       ], 
       [
         {tip: "Technique", title :'Découpe', descr:'Plaque Acier'}, 
@@ -90,6 +92,8 @@ export function Creations() {
         {tip: "Assemblage", title :'Soudure', descr:'Tig Acier Inox Alu.'}, 
         {tip: "Assemblage", title :'Soudure', descr:'Tig Acier Inox Alu.'}, 
         {tip: "Assemblage", title :'Soudure', descr:'Tig Acier Inox Alu.'}, 
+        {tip: "Assemblage", title :'Réalisation', descr:'Gabarit de positionnement de vitrage dans le ferroviaire.'},
+        {tip: "Assemblage", title :'Réalisation', descr:'Prototype pour l\'industrie ferroviaire.'},  
       ],
       [
         {tip: "Outillage", title :'Mesure ', descr:'Laser.'}, 

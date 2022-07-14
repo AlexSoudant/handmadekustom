@@ -53,7 +53,8 @@ ${tw`
 const competencesTable = [
     {title :'Tig Acier Inox Alu'}, 
     {title :'Usinage'}, 
-    {title :'Roulage'}
+    {title :'Roulage'},
+    {title :'conception / dessin'},
 ];
 
 const cache = {};
