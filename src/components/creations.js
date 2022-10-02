@@ -75,8 +75,8 @@ export function Creations() {
         {tip: "Assemblage", title :'Fabrication', descr:'Portillon de jardin.'}, 
         {tip: "Technique", title :'Soudure', descr:'Lipsum'}, 
         {tip: "Assemblage", title :'Fabrication', descr:'Rambarde amovible.'}, 
-        {tip: "Assemblage", title :'Réalisation', descr:'Gabarit de positionnement de vitrage dans le ferroviaire.'},
-        {tip: "Assemblage", title :'Réalisation', descr:'Prototype pour l\'industrie ferroviaire.'},  
+        {tip: "Réparation", title :'Réservoir', descr:'Réparation d’un réservoir d’avion en aluminium.'},
+        {tip: "Assemblage", title :'Réalisation', descr:'Réalisation d’un renfort sur mesure en aluminium de 10 mm d’épaisseur pour rigidifier et rallonger un mat de voilier'},  
       ], 
       [
         {tip: "Technique", title :'Découpe', descr:'Plaque Acier'}, 
