@@ -77,6 +77,7 @@ export function Creations() {
         {tip: "Assemblage", title :'Fabrication', descr:'Rambarde amovible.'}, 
         {tip: "Réparation", title :'Réservoir', descr:'Réparation d’un réservoir d’avion en aluminium.'},
         {tip: "Assemblage", title :'Réalisation', descr:'Réalisation d’un renfort sur mesure en aluminium de 10 mm d’épaisseur pour rigidifier et rallonger un mat de voilier'},  
+        {tip: "Assemblage", title :'Fabrication', descr:'Découpe laser sur tôle en corten à l’effigie de la mascotte de l’île de ré.'}, 
       ], 
       [
         {tip: "Technique", title :'Découpe', descr:'Plaque Acier'}, 
@@ -94,6 +95,8 @@ export function Creations() {
         {tip: "Assemblage", title :'Soudure', descr:'Tig Acier Inox Alu.'}, 
         {tip: "Assemblage", title :'Réalisation', descr:'Gabarit de positionnement de vitrage dans le ferroviaire.'},
         {tip: "Assemblage", title :'Réalisation', descr:'Prototype pour l\'industrie ferroviaire.'},  
+        {tip: "Assemblage", title :'Fabrication', descr:'Escalier acier galvanisé.'}, 
+        {tip: "Assemblage", title :'Fabrication', descr:'Escalier acier galvanisé.'}, 
       ],
       [
         {tip: "Outillage", title :'Mesure ', descr:'Laser.'}, 
