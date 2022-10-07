@@ -96,7 +96,8 @@ export function Creations() {
         {tip: "Assemblage", title :'Réalisation', descr:'Gabarit de positionnement de vitrage dans le ferroviaire.'},
         {tip: "Assemblage", title :'Réalisation', descr:'Prototype pour l\'industrie ferroviaire.'},  
         {tip: "Assemblage", title :'Fabrication', descr:'Escalier acier galvanisé.'}, 
-        {tip: "Assemblage", title :'Fabrication', descr:'Escalier acier galvanisé.'}, 
+        {tip: "Assemblage", title :'Fabrication', descr:'Escalier acier galvanisé.'},
+        {tip: "Assemblage", title :'Réalisation', descr:'Gabarit de positionnement en aluminium.'},  
       ],
       [
         {tip: "Outillage", title :'Mesure ', descr:'Laser.'}, 
