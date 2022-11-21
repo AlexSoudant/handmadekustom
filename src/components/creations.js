@@ -109,6 +109,7 @@ export function Creations() {
         {tip: "Technique", title :'Réparation', descr:'Première étape de réparation d\'une cuve.'},
         {tip: "Technique", title :'Réparation', descr:'Seconde étape de réparation d\'une cuve.'}, 
         {tip: "Technique", title :'Réparation', descr:'Remplacement de dents sur fraise de type foreuse.'}, 
+        {tip: "Technique", title :'Soudure', descr:'Anneau de levage sur bras de pelleteuse.'}, 
       ]
     ];
 
