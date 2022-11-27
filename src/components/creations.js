@@ -99,6 +99,7 @@ export function Creations() {
         {tip: "Assemblage", title :'Fabrication', descr:'Escalier acier galvanisé.'}, 
         {tip: "Assemblage", title :'Fabrication', descr:'Escalier acier galvanisé.'},
         {tip: "Assemblage", title :'Réalisation', descr:'Gabarit de positionnement en aluminium.'},  
+        {tip: "Technique", title :'Installation', descr:'Remplacement de 2 rideaux métalliques 4x7 et 8x7.'},  
       ],
       [
         {tip: "Outillage", title :'Mesure ', descr:'Laser.'}, 
