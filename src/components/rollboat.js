@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import pdfIcon from '../images/PDF_32.png';
-import myPDF from '../images/rollboat.pdf';
+import myPDF from '../images/Rollboat.pdf';
 import { Dot } from "./dot";
 
 export function Rollboat() {
