@@ -17,24 +17,39 @@ ${tw`
     height[20em]
     sm:height[auto]
     overflow-x-hidden
-`};`;
-
-const CompetencesTitle = styled.h1`
-${tw`  
-    flex-auto
-    flex-col
     font-size[xx-large]
     text-align[center]
     font-style[oblique]
     font-bold
-    sm:padding-bottom[2em]
-    padding-bottom[1em]
-`};
+`};`;
 
-    div {
-        font-size: 30px;
+const Title = styled.div`
+  position: relative;
+  width: 100%;
+
+  div {
+    text-align: center;
+    ${tw`  
+        h-16
+        display[flex]
+        justify-center
+        font-size[xx-large]
+        text-align[center]
+        font-style[oblique]
+    `};
+
+    h1 {
+      align-self: center;
     }
+
+    span {
+      align-self: center;
+      margin-top: 0.5em;
+      margin-left: 0.25em;
+    }
+  }
 `;
+
 
 
   const CardsContainer = styled.div`{
@@ -70,7 +85,7 @@ const images = Object.entries(cache).map(module => module[1].default);
 export function Competences() {
     return (
       <CompentencesContainer>
-          <CompetencesTitle>Mes Compétences <Dot /></CompetencesTitle>
+          <Title><div><h1>Mes Compétences</h1> <Dot/></div></Title>
           <CardsContainer>
           {images.map((image, index) => {
                return <Card title={competencesTable[index].title} image={image} key={index}></Card>

@@ -7,6 +7,7 @@ import { Illustration } from "../components/illustation";
 import { Me } from "../components/me";
 import { Navbar } from "../components/navbar";
 import { References } from "../components/references";
+import { Rollboat } from "../components/rollboat";
 
 // styles
 const pageStyles = {
@@ -24,6 +25,7 @@ const IndexPage = () => {
       <Competences />
       <Me />
       <Creations />
+      <Rollboat />
       <Contact />
       <References />
       <Footer />

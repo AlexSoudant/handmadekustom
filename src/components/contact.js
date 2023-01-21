@@ -11,20 +11,39 @@ const ContactContainer = styled.div`
         padding-bottom[5em]
         justify-center
         align-items[center]
-    `};
-`;
-
-const Title = styled.h1`
-    ${tw`  
-        flex-auto
-        flex-col
         font-size[xx-large]
         text-align[center]
         font-style[oblique]
         font-bold
-        padding-bottom[2em]
     `};
-`
+`;
+
+const Title = styled.div`
+  position: relative;
+  width: 100%;
+
+  div {
+    text-align: center;
+    ${tw`  
+        h-16
+        display[flex]
+        justify-center
+        font-size[xx-large]
+        text-align[center]
+        font-style[oblique]
+    `};
+
+    h1 {
+      align-self: center;
+    }
+
+    span {
+      align-self: center;
+      margin-top: 0.5em;
+      margin-left: 0.25em;
+    }
+  }
+`;
 
 const Information = styled.h2`
     ${tw`  
@@ -41,7 +60,7 @@ const Information = styled.h2`
 export function Contact() {
     return (
       <ContactContainer>
-          <Title>Contact <Dot /></Title>
+          <Title><div><h1>Contact</h1> <Dot/></div></Title>
           <Information>Romain Blanchard</Information>
           <Information>metalmaster.rb@gmail.com</Information>
           <Information>Tél : 07 456 226 15</Information>
