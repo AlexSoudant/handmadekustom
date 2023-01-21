@@ -68,7 +68,7 @@ const Gallery = styled.div`
 `;
   
 export function Creations() {
-    const creationsParams = [{title:"Particuliers"}, {title:"Industrie"}, {title:"Travaux public"}]
+    const creationsParams = [{title:"Particuliers"}, {title:"Industrie"}, {title:"Travaux public"}, {title:"Nautisme"}]
     const creationsTable = [
       [
         {tip: "Assemblage", title :'Fabrication', descr:'Jardinière en acier corten.'}, 
@@ -76,9 +76,7 @@ export function Creations() {
         {tip: "Technique", title :'Soudure', descr:'Lipsum'}, 
         {tip: "Assemblage", title :'Fabrication', descr:'Rambarde amovible.'}, 
         {tip: "Réparation", title :'Réservoir', descr:'Réparation d’un réservoir d’avion en aluminium.'},
-        {tip: "Assemblage", title :'Réalisation', descr:'Réalisation d’un renfort sur mesure en aluminium de 10 mm d’épaisseur pour rigidifier et rallonger un mat de voilier.'},  
-        {tip: "Assemblage", title :'Fabrication', descr:'Découpe laser sur tôle en corten à l’effigie de la mascotte de l’île de ré.'}, 
-        {tip: "Assemblage", title :'Réalisation', descr:'Formage d’un renfort de mat en aluminium.'}, 
+        {tip: "Assemblage", title :'Fabrication', descr:'Découpe laser sur tôle en corten à l’effigie de la mascotte de l’île de ré.'}
       ], 
       [
         {tip: "Technique", title :'Découpe', descr:'Plaque Acier'}, 
@@ -99,7 +97,7 @@ export function Creations() {
         {tip: "Assemblage", title :'Fabrication', descr:'Escalier acier galvanisé.'}, 
         {tip: "Assemblage", title :'Fabrication', descr:'Escalier acier galvanisé.'},
         {tip: "Assemblage", title :'Réalisation', descr:'Gabarit de positionnement en aluminium.'},  
-        {tip: "Technique", title :'Installation', descr:'Remplacement de 2 rideaux métalliques 4x7 et 8x7.'},  
+        {tip: "Technique", title :'Installation ', descr:'Remplacement de 2 rideaux métalliques 4x7 et 8x7.'},  
       ],
       [
         {tip: "Outillage", title :'Mesure ', descr:'Laser.'}, 
@@ -111,6 +109,19 @@ export function Creations() {
         {tip: "Technique", title :'Réparation', descr:'Seconde étape de réparation d\'une cuve.'}, 
         {tip: "Technique", title :'Réparation', descr:'Remplacement de dents sur fraise de type foreuse.'}, 
         {tip: "Technique", title :'Soudure', descr:'Anneau de levage sur bras de pelleteuse.'}, 
+      ],
+      [
+        {tip: "Assemblage", title :'Réalisation', descr:'Réalisation d’un renfort sur mesure en aluminium de 10 mm d’épaisseur pour rigidifier et rallonger un mat de voilier.'},  
+        {tip: "Assemblage", title :'Réalisation', descr:'Formage d’un renfort de mat en aluminium.'}, 
+        {tip: "Assemblage", title :'Réalisation', descr:''},  
+        {tip: "Assemblage", title :'Réalisation', descr:''}, 
+        {tip: "Assemblage", title :'Réalisation', descr:'BER de stockage fixe pour bateau à fond plat.'}, 
+        {tip: "Assemblage", title :'Réalisation', descr:'BER de stockage réglable pour bateau type voilier.'}, 
+        {tip: "Assemblage", title :'Réalisation', descr:'BER de stockage réglable lourd.'}, 
+        {tip: "Assemblage", title :'Réalisation', descr:'Chandelles pour embarcation légère.'}, 
+        {tip: "Assemblage", title :'Réalisation', descr:'BER de stockage léger.'}, 
+        {tip: "Assemblage", title :'Réalisation', descr:'BER de stockage réglable roulant.'}, 
+        {tip: "Assemblage", title :'Réalisation', descr:'La remorque hydraulique rollboat. Une documentation numérique est disponible sur ce site.'}, 
       ]
     ];
 
@@ -137,6 +148,12 @@ export function Creations() {
         cache = {};
         importAll(
           require.context("../images/realisations/travauxPublic", false, /\.(png|jpe?g|svg)$/),
+        );
+        images.push(Object.entries(cache).map((module) => module[1].default));
+
+        cache = {};
+        importAll(
+          require.context("../images/realisations/nautisme", false, /\.(png|jpe?g|svg)$/),
         );
         images.push(Object.entries(cache).map((module) => module[1].default));
     }
