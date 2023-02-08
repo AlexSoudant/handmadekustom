@@ -65,30 +65,44 @@ const Title = styled.div`
   // faire des cartes de compétence
 // https://www.randstad.fr/metiers/chaudronnier-fh/
 
-const competencesTable = [
+const competencesTable_1 = [
     {title :'Tig Acier Inox Alu'}, 
     {title :'Usinage'}, 
     {title :'Roulage'},
-    {title :'conception / dessin'},
 ];
 
-const cache = {};
+const competencesTable_2 = [
+  {title :'conception / dessin'},
+  {title :'Soudure mig acier'}
+];
+
+let cache = {};
 
 function importAll(r) {
     r.keys().forEach((key) => (cache[key] = r(key)));
 }
 // Note from the docs -> Warning: The arguments passed to require.context must be literals!
-importAll(require.context("../images/competences", false, /\.(png|jpe?g|svg)$/));
+importAll(require.context("../images/competences/small", false, /\.(png|jpe?g|svg)$/));
 
-const images = Object.entries(cache).map(module => module[1].default);
+const imagesSmall = Object.entries(cache).map(module => module[1].default);
+
+cache = {};
+importAll(require.context("../images/competences/large", false, /\.(png|jpe?g|svg)$/));
+
+const imagesLarge = Object.entries(cache).map(module => module[1].default);
 
 export function Competences() {
     return (
       <CompentencesContainer>
           <Title><div><h1>Mes Compétences</h1> <Dot/></div></Title>
           <CardsContainer>
-          {images.map((image, index) => {
-               return <Card title={competencesTable[index].title} image={image} key={index}></Card>
+          {imagesSmall.map((image, index) => {
+               return <Card title={competencesTable_1[index].title} image={image} key={index}></Card>
+          })}
+          </CardsContainer>
+          <CardsContainer>
+          {imagesLarge.map((image, index) => {
+               return <Card title={competencesTable_2[index].title} image={image} key={index}></Card>
           })}
           </CardsContainer>
       </CompentencesContainer>
